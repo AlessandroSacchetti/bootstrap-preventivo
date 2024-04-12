@@ -45,7 +45,7 @@
               <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
               <textarea class="form-control" id="largeTextArea" rows="3"></textarea>
             </div>
-            <select class="form-select mb-3" aria-label="Default select example">
+            <select class="form-select mb-3" aria-label="Default select example" id="formSelect">
               <option selected>Performance richiesta</option>
               <option value="1" id="valueOne">One</option>
               <option value="2" id="valueTwo">Two</option>
@@ -54,22 +54,31 @@
             <div class="mb-3">
               <input type="discount" class="form-control" id="formDiscount" placeholder="discount code here">
             </div>
+            <div class="row">
+              <div class="col mt-3">
+                <button type="button" class="btn btn-outline-dark" id="formSubmit">Calcola Preventivo</button>
+              </div>
+              <div class="col">
+                <p class="border-bottom">Il prezzo totale è di:</p>
+                <p> € ---, -- </p>
+              </div>
+            </div>
           </div>
           <div class="col-sm-5">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card mt-2">
+              <img src="./img/OIP.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title">I nostri contatti</h5>
+                <p class="card-text">Se hai bisogno di aiuto puoi contattarci:</p>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">help@boolfactrory.test</li>
+                <li class="list-group-item">+112-233-4455</li>
+                <li class="list-group-item">+39 3335858124</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <a href="#" class="card-link">Help desk</a>
+                <a href="#" class="card-link">F.A.Q.</a>
               </div>
             </div>
             </div>
