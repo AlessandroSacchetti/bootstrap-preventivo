@@ -45,12 +45,13 @@
               <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
               <textarea class="form-control" id="largeTextArea" rows="3"></textarea>
             </div>
-            <select class="form-select mb-3" aria-label="Default select example" id="formSelect">
-              <option selected>Performance richiesta</option>
-              <option value="1" id="valueOne">One</option>
-              <option value="2" id="valueTwo">Two</option>
-              <option value="3" id="valueThree">Three</option>
-            </select>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example" id="formSelect">
+                <option selected>sviluppo backend</option>
+                <option value="1" id="valueOne">sviluppo frontend</option>
+                <option value="2" id="valueTwo">analisi progettuale</option>
+              </select>
+            </div>
             <div class="mb-3">
               <input type="discount" class="form-control" id="formDiscount" placeholder="discount code here">
             </div>
@@ -60,7 +61,7 @@
               </div>
               <div class="col">
                 <p class="border-bottom">Il prezzo totale è di:</p>
-                <p> € ---, -- </p>
+                <p id="formTotalPrice"> € ---, -- </p>
               </div>
             </div>
           </div>
