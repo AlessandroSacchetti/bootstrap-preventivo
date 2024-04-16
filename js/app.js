@@ -35,14 +35,14 @@ btnElement.addEventListener('click', function(){
     const discountElement = document.getElementById('formDiscount')
     let valueDiscount = discountElement.value
     if(valueDiscount === "YHDNU32"||valueDiscount === "JANJC63"||valueDiscount === "PWKCN25"||valueDiscount === "SJDPO96"||valueDiscount ==="POCIE24"){
-        let discount = (standardPrice*25)/100
+        discount = (standardPrice*25)/100
         //console.log('€' + discountedPrice)
     } else{
         let discount = 0
         window.alert('il preventivo viene calcolato senza applicare sconti perché il codice non è stato inserito o non è valido')
         //console.log('€' + standardPrice)
     }
-    let discountedPrice = standardPrice-discount  
+    let discountedPrice = standardPrice-discount
 
     /*DA CONTROLLARE*/
     if(discount != 0){
