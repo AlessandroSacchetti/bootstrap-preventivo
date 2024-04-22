@@ -31,6 +31,11 @@ btnElement.addEventListener('click', function(){
     }
     let standardPrice = pricePerHour*10
 
+     //integer and decimal separation of non discounted price
+    let standardInteger = Math.floor(standardPrice)
+    var standardDecimal = (standardPrice % 1).toFixed(2).substring(2)
+
+    //discount calculation
     let discount = 0
     const discountElement = document.getElementById('formDiscount')
     let valueDiscount = discountElement.value
@@ -44,10 +49,23 @@ btnElement.addEventListener('click', function(){
     }
     let discountedPrice = standardPrice-discount
 
-    /*DA CONTROLLARE*/
+    //integer and decimal separation of discounted price
+    let discountedInteger = Math.floor(discountedPrice)
+    var discountedDecimal = (discountedPrice % 1).toFixed(2).substring(2)
+
+    /*DA CONTROLLARE
     if(discount != 0){
-        document.getElementById('formTotalPrice').innerHTML = '€' + discountedPrice
+        document.getElementById('formTotalPrice').innerHTML = '€' + discountedInteger + ',' + discountedDecimal
     } else{
-        document.getElementById('formTotalPrice').innerHTML = '€' + standardPrice
-    }
+        document.getElementById('formTotalPrice').innerHTML = '€' + standardInteger + ',' + standardDecimal
+    } */
+
+    if(discount != 0){
+        document.getElementById('formIntegerPrice').innerHTML = discountedInteger
+        document.getElementById('formDecimalPrice').innerHTML = discountedDecimal
+    } else{
+        document.getElementById('formIntegerPrice').innerHTML = standardInteger
+        document.getElementById('formDecimalPrice').innerHTML = standardDecimal
+    } 
+
 })
